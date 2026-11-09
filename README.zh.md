@@ -69,7 +69,10 @@ Web profile 为 `~/.dsh/profiles/web`）：
    }
    ```
 
-3. 重启 DSH。桌面 App 退出后重新打开；Web profile 重启 `dsh web` 服务。
+3. 如果是手动编辑 `package.json` 而不是用 `pnpm add`，需要在 profile 目录执行
+   `pnpm install`。
+
+4. 重启 DSH。桌面 App 退出后重新打开；Web profile 重启 `dsh web` 服务。
 
 包名刻意使用 `@local/` 作用域并标记为 private：它是 profile bundle，不是 npm 包。
 

@@ -84,7 +84,10 @@ or `~/.dsh/profiles/web` for the Web profile):
    }
    ```
 
-3. Restart DSH. On the Desktop app, quit and reopen; for a Web profile, restart
+3. If you edited `package.json` by hand rather than using `pnpm add`, run
+   `pnpm install` in the profile directory.
+
+4. Restart DSH. On the Desktop app, quit and reopen; for a Web profile, restart
    the `dsh web` server.
 
 The package name is intentionally scoped `@local/` and marked private: it is a
