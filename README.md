@@ -30,6 +30,22 @@ paths, and message bodies; preview the match before opening the session.
   **Settings → Keyboard shortcuts**.
 - **English and Chinese UI**, following the app locale.
 
+## Screenshots
+
+Screenshots use synthetic demo data.
+
+![Body search with a readable excerpt](docs/screenshot-body.png)
+
+*A body-only match: the Host excerpt is rendered as readable text with query terms highlighted.*
+
+![Title match with a secondary body hit](docs/screenshot-match-reason.png)
+
+*A title match leads the preview; the incidental tool call is reduced to a one-line note.*
+
+![Structured tool-call preview](docs/screenshot-tool-call.png)
+
+*A body-only tool call expanded into labelled fields and a wrapped command block.*
+
 ## Requirements
 
 - A DeepSeek Harness build with the client plugin slots
