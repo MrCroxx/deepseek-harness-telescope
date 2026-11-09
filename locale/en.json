@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Telescope Search",
+    "description": "A telescope-style fuzzy session finder. On the Desktop app the built-in ⌘K search chord is taken over on first run (restorable in Settings → Keyboard shortcuts); otherwise use the Search row at the sidebar foot, ⌘⇧F on Desktop, or ⌘⌥F on Web."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Telescope 搜索",
+    "description": "telescope 风格的会话模糊搜索。桌面 App 首次加载会把内置的 ⌘K 搜索快捷键接管给 Telescope（可在「设置 → 快捷键」恢复默认）；也可以点侧栏底部的「搜索」，或使用 ⌘⇧F（桌面）/ ⌘⌥F（Web）。"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "@local/telescope-search",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Telescope-style fuzzy session finder for the DeepSeek Harness Web UI and Desktop app.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "locale/*.json",
+    "icon.svg",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-shortcuts"
+      ]
+    }
+  },
+  "author": "MrCroxx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrCroxx/deepseek-harness-telescope.git"
+  },
+  "homepage": "https://github.com/MrCroxx/deepseek-harness-telescope#readme",
+  "bugs": {
+    "url": "https://github.com/MrCroxx/deepseek-harness-telescope/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "telescope",
+    "fuzzy-finder",
+    "session-search",
+    "plugin"
+  ]
+}

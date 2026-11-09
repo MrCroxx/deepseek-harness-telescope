@@ -1,0 +1,19 @@
+# Telescope Search bundle.
+#
+# The body search in the finder uses the Host's `session.search` RPC, whose
+# SQLite FTS index ships disabled (`openAt: never`) in the Web app bundle. The
+# bundle comment there names this exact override as the supported way for a
+# deployment to turn content search on: keep the in-memory corpus and open it
+# on the first search.
+#
+# The RPC caps the returned excerpt at 240 code points regardless of
+# `snippetChars`, so the finder formats that bounded window and offers Enter to
+# open the session for the full message.
+- id: session-query-sqlite
+  config:
+    path: ':memory:'
+    openAt: first-search
+
+- insert:
+    - id: telescope-search
+      name: '@local/telescope-search'
